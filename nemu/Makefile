@@ -20,9 +20,9 @@ BUILD_DIR ?= ./build
 ifdef SHARE
 SO = -so
 SO_CFLAGS = -fPIC -D_SHARE=1 
-SO_LDLAGS = -shared -fPIC -L/home/linuxbrew/.linuxbrew/lib
+SO_LDLAGS = -shared -fPIC 
 else
-LD_LIBS = -lSDL2 -lreadline -ldl -L/home/linuxbrew/.linuxbrew/lib
+LD_LIBS = -lSDL2 -lreadline -ldl
 endif
 
 ifndef SHARE
