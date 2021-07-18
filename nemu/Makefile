@@ -26,7 +26,7 @@ LD_LIBS = -lSDL2 -lreadline -ldl -L/home/linuxbrew/.linuxbrew/lib
 endif
 
 ifndef SHARE
-DIFF ?= kvm
+DIFF ?= qemu
 ifneq ($(ISA),x86)
 ifeq ($(DIFF),kvm)
 DIFF = qemu

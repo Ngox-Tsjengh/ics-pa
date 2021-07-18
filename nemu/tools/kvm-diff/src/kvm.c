@@ -8,6 +8,9 @@
 #include <sys/mman.h>
 #include <linux/kvm.h>
 
+#define KVM_SYNC_X86_REGS      (1UL << 0)
+#define KVM_SYNC_X86_SREGS     (1UL << 1)
+
 /* CR0 bits */
 #define CR0_PE 1u
 #define CR0_PG (1u << 31)
